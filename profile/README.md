@@ -1,37 +1,52 @@
 ## Hi there 👋
 
-<!--
+# VidAI
 
-**Here are some ideas to get you started:**
+A Scotland-based startup building a high-performance **AI gateway with built-in guardrails** for production LLM deployments.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
---># VidAI — The Sovereign AI Fabric
+We focus on what matters in production: **security**, **reliability**, **latency**, and **control**—not just swapping model providers.
 
-A Scotland-based startup building the standard high-performance infrastructure for the Agentic Era.
+---
 
-## Solving the Inference Bottleneck
+## Core Offering
 
-While everyone focuses on training bigger models, we focus on **serving them efficiently**.
+### ⚙️ Vidai.Server *(Enterprise)*  
+An AI gateway that enforces **runtime guardrails**, **rate limits**, **audit trails**, and **structured output guarantees**—without sacrificing performance.
 
-VidAI delivers a **High-Density Control Plane** for enterprise AI—replacing heavy Python orchestration layers with a **zero-copy Rust fabric**. This enables:
-- **6,000+ requests per second (RPS) per core**
-- **Sub-15ms latency**
-- **100% cost visibility** and **local compliance** via **ONNX**
+- Sub-15ms p99 latency, 6,000+ RPS per core
+- Zero-copy Rust data plane
+- Full sovereignty: your prompts, responses, and logs never leave your infrastructure
+- Pluggable guardrail policies (e.g., PII redaction, prompt injection detection, schema enforcement)
 
-This isn’t just optimization—it’s a paradigm shift toward **infinite scale** with full sovereignty.
+> Guardrail *models* (e.g., classifiers, validators) are optional extensions—you bring your own or use lightweight defaults.
 
-## Engineering, Not Hype
+---
 
-We prioritize **substance over status**:
-- Building **high-density, low-carbon infrastructure** from first principles
-- No bloated stacks—just lean, purpose-built systems that run **faster, cooler, and longer**
-- Reliability engineered **at the edge of physics**
+## Open Source Tools
 
-## The Sovereignty Imperative
+### 🧪 [VidaiMock](https://github.com/vidaiUK/VidaiMock)  
+Realistic, zero-dependency mock server for LLM APIs (OpenAI, Anthropic, Bedrock, etc.).  
+- Simulates streaming, tool calls, errors, and latency  
+- ~7MB static binary—no Docker, no DB  
+- Ideal for testing, CI, and local dev
+
+### 🧰 [VidaiSDK](https://github.com/vidaiUK/vidaisdk)  
+Python SDK with drop-in OpenAI compatibility and **automatic structured output**.  
+- Enforces JSON/schema compliance at the client  
+- Works standalone or with Vidai.Server for end-to-end guarantees  
+- Supports aliasing and clean provider abstraction
+
+---
+
+## Under the Hood
+
+- Models can be optimized via **ONNX** or **Candle** for lower latency—but this is optional. The gateway works with any standard LLM endpoint.
+- No vendor lock-in. No hidden telemetry.
+- Built for teams that need **production-grade control** without bloated middleware.
+
+---
+
+> 🏴 Based in Scotland. Open source where it helps developers. Enterprise-ready where it matters.
 
 Opaque third-party APIs are a liability. The future belongs to enterprises that own their:
 - **Model weights**  
