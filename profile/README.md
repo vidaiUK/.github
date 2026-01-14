@@ -10,7 +10,7 @@ We focus on what matters in production: **security**, **reliability**, **latency
 
 ## Core Offering
 
-### ⚙️ Vidai.Server *(Enterprise)*  
+### ⚙️ [Vidai.Server](https://vidai.uk) *(Enterprise)*  
 An AI gateway that enforces **runtime guardrails**, **rate limits**, **audit trails**, and **structured output guarantees**—without sacrificing performance.
 
 - Sub-15ms p99 latency, 6,000+ RPS per core
