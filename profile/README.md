@@ -45,6 +45,7 @@ the figure is a floor, not a ceiling.
 
 → Architecture, use cases and pricing at **[vidai.uk](https://vidai.uk)**
 → Documentation at **[docs.vidai.uk](https://docs.vidai.uk)**
+→ Self-install Docker releases (Community / Scale / Enterprise — same bundle, your `vidai.license` chooses the edition) at **[github.com/vidaiUK/vidai-quickstart](https://github.com/vidaiUK/vidai-quickstart)**
 
 ### [Vidai.Mock](https://github.com/vidaiUK/VidaiMock) (open source · Apache 2.0)
 
