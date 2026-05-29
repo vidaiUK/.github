@@ -23,7 +23,7 @@ and their latency budgets.
 
 ## Products
 
-### [Vidai.ControlPlane](https://vidai.uk) (commercial)
+### [Vidai.ControlPlane](https://vidai.uk) (commercial · free Community edition)
 
 The control plane that lives in the request path of every AI call.
 
